@@ -16,14 +16,14 @@ const InfoBox = (props) => {
 
     useEffect(() => {
         const infoData = props.data;
-        let payout = [];
+        // let payout = [];
         for (let thing in infoData) {
             payout.push(infoData[thing])
         }
         setPayout(payout);
         setInfoCurrent(payout[30]);
         setInfoPayout(payout[30] - payout[0]);
-    }, [props.data])
+    }, [payout, props.data])
 
     return(
         <div>
