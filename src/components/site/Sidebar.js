@@ -41,9 +41,8 @@ const Sidebar = () => {
             </div>
             <div className='sidebar-route'>
                 <Switch>
-                    <Route exact path='/home'><Home /></Route>
-                    <Route exact path='/resources'><Resources /></Route>
                     <Route exact path='/'><Home /></Route>
+                    <Route exact path='/resources'><Resources /></Route>
                     <Route exact path='/functionalcomponent'><FunctionalComponentDemo /></Route>
                     <Route exact path='/classdemo'><ClassComponentDemo /></Route>
                     <Route exact path='/jsxrules'><JSXRules /></Route>
